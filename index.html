@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapFlix - Film & Series Streaming</title>
+    <meta name="description" content="Streaming film dan series terbaik dari Indonesia, Korea, Anime dan lainnya">
+    <meta name="keywords" content="streaming, film, series, kdrama, anime, indonesia">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="rapflix.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>RapFlix</h1>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active" data-category="trending">Beranda</a></li>
+                    <li><a href="#" class="nav-link" data-category="indonesian-movies">Film Indonesia</a></li>
+                    <li><a href="#" class="nav-link" data-category="indonesian-drama">Drama Indonesia</a></li>
+                    <li><a href="#" class="nav-link" data-category="kdrama">K-Drama</a></li>
+                    <li><a href="#" class="nav-link" data-category="anime">Anime</a></li>
+                    <li><a href="#" class="nav-link" data-category="short-tv">Short TV</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Cari film atau series...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero-section">
+            <div class="hero-slider" id="hero-slider">
+                <!-- Hero slides akan diisi oleh JavaScript -->
+            </div>
+            <div class="hero-controls">
+                <button class="hero-prev" id="hero-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="hero-next" id="hero-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="section-title">Film & Series Trending</h2>
+                    <div class="filter-tabs" id="filter-tabs">
+                        <!-- Tabs akan diisi oleh JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Loading Skeleton -->
+                <div class="loading-skeleton" id="loading-skeleton">
+                    <div class="skeleton-grid">
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                        <div class="skeleton-card"></div>
+                    </div>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="content-grid" id="content-grid">
+                    <!-- Cards akan diisi oleh JavaScript -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more-btn">
+                        <span>Muat Lebih Banyak</span>
+                        <div class="loading-spinner" id="load-spinner"></div>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detail Modal -->
+    <div class="modal" id="detail-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div class="detail-content" id="detail-content">
+                <!-- Detail content akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results -->
+    <div class="search-results" id="search-results">
+        <!-- Search results akan diisi oleh JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
